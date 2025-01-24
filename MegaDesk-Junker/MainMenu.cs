@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MegaDesk_Junker
+{
+    public partial class MainMenu : Form
+    {
+        private Button add_new_quote;
+        private Button view_quotes;
+        private Button search_quotes;
+        private Button exit;
+        private PictureBox desk;
+
+        public MainMenu()
+        {
+            InitializeComponent();
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpenAddNewQuote(object sender, EventArgs e)
+        {
+            AddQuote newAddQuote = new AddQuote();
+            newAddQuote.Show();
+        }
+
+        private void OpenViewQuotes(object sender, EventArgs e)
+        {
+            ViewAllQuotes newViewAllQuotes = new ViewAllQuotes();
+            newViewAllQuotes.Show();
+        }
+
+        private void OpenDisplayQuote(object sender, EventArgs e)
+        {
+            DisplayQuote newDisplayQuote = new DisplayQuote();
+            newDisplayQuote.Show();
+        }
+
+        private void Exit(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}
