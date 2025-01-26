@@ -40,10 +40,10 @@ namespace MegaDesk_Junker
             newViewAllQuotes.Show();
         }
 
-        private void OpenDisplayQuote(object sender, EventArgs e)
+        private void OpenSearchQuotes(object sender, EventArgs e)
         {
-            DisplayQuote newDisplayQuote = new DisplayQuote();
-            newDisplayQuote.Show();
+            SearchQuotes newSearchQuotes = new SearchQuotes();
+            newSearchQuotes.Show();
         }
 
         private void Exit(object sender, EventArgs e)

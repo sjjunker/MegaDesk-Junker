@@ -70,7 +70,7 @@
             this.search_quotes.TabIndex = 2;
             this.search_quotes.Text = "Search Quotes";
             this.search_quotes.UseVisualStyleBackColor = false;
-            this.search_quotes.Click += new System.EventHandler(this.OpenDisplayQuote);
+            this.search_quotes.Click += new System.EventHandler(this.OpenSearchQuotes);
             // 
             // exit
             // 
