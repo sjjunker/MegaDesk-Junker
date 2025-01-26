@@ -226,6 +226,7 @@
             this.Controls.Add(this.desk_label);
             this.Name = "AddQuote";
             this.Text = "Add New Quote";
+            this.Load += new System.EventHandler(this.AddQuote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

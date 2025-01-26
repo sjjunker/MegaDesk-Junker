@@ -73,26 +73,38 @@ namespace MegaDesk_Junker
 
         private void ValidateDepth(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter || e.KeyChar == (char)Keys.Tab)
-            {
-                char[] inputChars = depthInput.Text.ToCharArray();
+            char[] inputChars = depthInput.Text.ToCharArray();
 
-                if (!(Char.IsDigit(inputChars[0])) || !(Char.IsDigit(inputChars[1])))
-                {
-                    MessageBox.Show("Depth must be a number.");
-                    depthLabel.ForeColor = Color.Red;
-                }
-                else if (int.Parse(depthInput.Text) < Desk.MIN_DEPTH || int.Parse(depthInput.Text) > Desk.MAX_DEPTH)
-                {
-                    MessageBox.Show($"Depth must be between {Desk.MIN_DEPTH} and {Desk.MAX_DEPTH} inches.");
-                    depthLabel.ForeColor = Color.Red;
-                }
-                else
-                {
-                    //Valid depth
-                    depthLabel.ForeColor = Color.Black;
-                }
+            if (!(Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar)))
+            {
+                MessageBox.Show("Depth must be a number.");
+                depthInput.Text = "";
+                depthLabel.ForeColor = Color.Red;
             }
+            else if (inputChars.Length == 2)
+            {
+                int depth;
+                if (int.TryParse(depthInput.Text, out depth))
+                {
+                    if (depth < Desk.MIN_DEPTH || depth > Desk.MAX_DEPTH)
+                    {
+                        MessageBox.Show($"Depth must be between {Desk.MIN_DEPTH} and {Desk.MAX_DEPTH} inches.");
+                        depthLabel.ForeColor = Color.Red;
+                    }
+                }
+            } else if (inputChars.Length > 2)
+            {
+                MessageBox.Show("Too many characters.");
+            } else
+            {
+                // Valid depth
+                depthLabel.ForeColor = Color.Black;
+            }
+        }
+
+        private void AddQuote_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
