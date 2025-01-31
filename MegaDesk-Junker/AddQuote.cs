@@ -17,11 +17,6 @@ namespace MegaDesk_Junker
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ValidateForm(object sender, EventArgs e)
         {
             if (widthInput.Text != null && depthInput.Text != null && drawerInput.SelectedIndex >= 0 && materialInput.SelectedIndex >= 0 && nameInput.Text != null && rushOrderInput.SelectedIndex >= 0)
