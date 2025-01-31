@@ -17,7 +17,7 @@ namespace MegaDesk_Junker
             InitializeComponent();
         }
 
-        private void DisplayQuote_Load(object sender, EventArgs e)
+        private void DisplayQuoteLoad(object sender, EventArgs e)
         {
             //Desk ouput
             widthOutput.Text = Program.deskQuotes.Last().Desk.Width.ToString();

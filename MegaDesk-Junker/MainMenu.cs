@@ -12,9 +12,9 @@ namespace MegaDesk_Junker
 {
     public partial class MainMenu : Form
     {
-        private Button add_new_quote;
-        private Button view_quotes;
-        private Button search_quotes;
+        private Button addNewQuote;
+        private Button viewQuotes;
+        private Button searchQuotes;
         private Button exit;
         private PictureBox desk;
 
@@ -23,7 +23,7 @@ namespace MegaDesk_Junker
             InitializeComponent();
         }
 
-        private void MainMenu_Load(object sender, EventArgs e)
+        private void MainMenuLoad(object sender, EventArgs e)
         {
 
         }

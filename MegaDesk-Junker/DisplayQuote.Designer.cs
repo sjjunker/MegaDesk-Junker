@@ -250,7 +250,7 @@
             this.Controls.Add(this.specificationsLabel);
             this.Name = "DisplayQuote";
             this.Text = "DisplayQuote";
-            this.Load += new System.EventHandler(this.DisplayQuote_Load);
+            this.Load += new System.EventHandler(this.DisplayQuoteLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -14,10 +14,10 @@ namespace MegaDesk_Junker
         private DateTime quoteDate;
         private decimal quoteAmount;
 
-        private const decimal BASE_PRICE = 200;
-        private const decimal PRICE_PER_DRAWER = 50;
-        private const decimal PRICE_PER_SQUARE_INCH = 1;
-        private const decimal SURFACE_AREA_BASE_LIMIT = 1000;
+        private const decimal BasePrice = 200;
+        private const decimal PricePerDrawer = 50;
+        private const decimal PricePerSqInch = 1;
+        private const decimal SurfaceAreaBaseLimit = 1000;
         private decimal[,] rushOrderPrices = new decimal[4, 3] { { 0, 0, 0 }, { 60, 70, 80 }, { 40, 50, 60 }, { 30, 35, 40 } };
         public DeskQuote(Desk desk, RushOrder numDays, string customerName, DateTime quoteDate)
         {
@@ -57,8 +57,8 @@ namespace MegaDesk_Junker
         public decimal computeQuoteAmount()
         {
             decimal surfaceArea = desk.SurfaceArea();
-            decimal surfaceAreaPrice = surfaceArea > 1000 ? (surfaceArea - 1000) * PRICE_PER_SQUARE_INCH : 0;
-            return BASE_PRICE + surfaceAreaPrice + desk.NumDrawers * PRICE_PER_DRAWER + (int)desk.SurfaceMaterial + computeRushOrder();
+            decimal surfaceAreaPrice = surfaceArea > 1000 ? (surfaceArea - 1000) * PricePerSqInch : 0;
+            return BasePrice + surfaceAreaPrice + desk.NumDrawers * PricePerDrawer + (int)desk.SurfaceMaterial + computeRushOrder();
         }
 
         public decimal computeRushOrder()
