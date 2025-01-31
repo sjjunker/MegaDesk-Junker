@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.desk_label = new System.Windows.Forms.Label();
+            this.deskLabel = new System.Windows.Forms.Label();
             this.widthLabel = new System.Windows.Forms.Label();
             this.depthLabel = new System.Windows.Forms.Label();
-            this.drawers_label = new System.Windows.Forms.Label();
-            this.material_label = new System.Windows.Forms.Label();
+            this.drawersLabel = new System.Windows.Forms.Label();
+            this.materialLabel = new System.Windows.Forms.Label();
             this.widthInput = new System.Windows.Forms.TextBox();
             this.depthInput = new System.Windows.Forms.TextBox();
             this.orderInfoLabel = new System.Windows.Forms.Label();
             this.customerLabel = new System.Windows.Forms.Label();
-            this.rush_order_label = new System.Windows.Forms.Label();
+            this.rushOrderLabel = new System.Windows.Forms.Label();
             this.nameInput = new System.Windows.Forms.TextBox();
             this.rushOrderInput = new System.Windows.Forms.ComboBox();
             this.submitButton = new System.Windows.Forms.Button();
@@ -45,15 +45,15 @@
             this.materialInput = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // desk_label
+            // deskLabel
             // 
-            this.desk_label.AutoSize = true;
-            this.desk_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desk_label.Location = new System.Drawing.Point(13, 13);
-            this.desk_label.Name = "desk_label";
-            this.desk_label.Size = new System.Drawing.Size(203, 26);
-            this.desk_label.TabIndex = 0;
-            this.desk_label.Text = "Desk Specifications";
+            this.deskLabel.AutoSize = true;
+            this.deskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskLabel.Location = new System.Drawing.Point(13, 13);
+            this.deskLabel.Name = "deskLabel";
+            this.deskLabel.Size = new System.Drawing.Size(203, 26);
+            this.deskLabel.TabIndex = 0;
+            this.deskLabel.Text = "Desk Specifications";
             // 
             // widthLabel
             // 
@@ -75,25 +75,25 @@
             this.depthLabel.TabIndex = 3;
             this.depthLabel.Text = "Depth";
             // 
-            // drawers_label
+            // drawersLabel
             // 
-            this.drawers_label.AutoSize = true;
-            this.drawers_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drawers_label.Location = new System.Drawing.Point(18, 117);
-            this.drawers_label.Name = "drawers_label";
-            this.drawers_label.Size = new System.Drawing.Size(120, 20);
-            this.drawers_label.TabIndex = 5;
-            this.drawers_label.Text = "Drawer Number";
+            this.drawersLabel.AutoSize = true;
+            this.drawersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawersLabel.Location = new System.Drawing.Point(18, 117);
+            this.drawersLabel.Name = "drawersLabel";
+            this.drawersLabel.Size = new System.Drawing.Size(120, 20);
+            this.drawersLabel.TabIndex = 5;
+            this.drawersLabel.Text = "Drawer Number";
             // 
-            // material_label
+            // materialLabel
             // 
-            this.material_label.AutoSize = true;
-            this.material_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.material_label.Location = new System.Drawing.Point(18, 151);
-            this.material_label.Name = "material_label";
-            this.material_label.Size = new System.Drawing.Size(65, 20);
-            this.material_label.TabIndex = 7;
-            this.material_label.Text = "Material";
+            this.materialLabel.AutoSize = true;
+            this.materialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel.Location = new System.Drawing.Point(18, 151);
+            this.materialLabel.Name = "materialLabel";
+            this.materialLabel.Size = new System.Drawing.Size(65, 20);
+            this.materialLabel.TabIndex = 7;
+            this.materialLabel.Text = "Material";
             // 
             // widthInput
             // 
@@ -120,7 +120,6 @@
             this.orderInfoLabel.Size = new System.Drawing.Size(182, 26);
             this.orderInfoLabel.TabIndex = 9;
             this.orderInfoLabel.Text = "Order Information";
-            this.orderInfoLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // customerLabel
             // 
@@ -132,15 +131,15 @@
             this.customerLabel.TabIndex = 10;
             this.customerLabel.Text = "Customer Name";
             // 
-            // rush_order_label
+            // rushOrderLabel
             // 
-            this.rush_order_label.AutoSize = true;
-            this.rush_order_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rush_order_label.Location = new System.Drawing.Point(18, 293);
-            this.rush_order_label.Name = "rush_order_label";
-            this.rush_order_label.Size = new System.Drawing.Size(91, 20);
-            this.rush_order_label.TabIndex = 12;
-            this.rush_order_label.Text = "Rush Order";
+            this.rushOrderLabel.AutoSize = true;
+            this.rushOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rushOrderLabel.Location = new System.Drawing.Point(18, 293);
+            this.rushOrderLabel.Name = "rushOrderLabel";
+            this.rushOrderLabel.Size = new System.Drawing.Size(91, 20);
+            this.rushOrderLabel.TabIndex = 12;
+            this.rushOrderLabel.Text = "Rush Order";
             // 
             // nameInput
             // 
@@ -214,16 +213,16 @@
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.rushOrderInput);
             this.Controls.Add(this.nameInput);
-            this.Controls.Add(this.rush_order_label);
+            this.Controls.Add(this.rushOrderLabel);
             this.Controls.Add(this.customerLabel);
             this.Controls.Add(this.orderInfoLabel);
             this.Controls.Add(this.depthInput);
             this.Controls.Add(this.widthInput);
-            this.Controls.Add(this.material_label);
-            this.Controls.Add(this.drawers_label);
+            this.Controls.Add(this.materialLabel);
+            this.Controls.Add(this.drawersLabel);
             this.Controls.Add(this.depthLabel);
             this.Controls.Add(this.widthLabel);
-            this.Controls.Add(this.desk_label);
+            this.Controls.Add(this.deskLabel);
             this.Name = "AddQuote";
             this.Text = "Add New Quote";
             this.Load += new System.EventHandler(this.AddQuote_Load);
@@ -234,16 +233,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label desk_label;
+        private System.Windows.Forms.Label deskLabel;
         private System.Windows.Forms.Label widthLabel;
         private System.Windows.Forms.Label depthLabel;
-        private System.Windows.Forms.Label drawers_label;
-        private System.Windows.Forms.Label material_label;
+        private System.Windows.Forms.Label drawersLabel;
+        private System.Windows.Forms.Label materialLabel;
         private System.Windows.Forms.TextBox widthInput;
         private System.Windows.Forms.TextBox depthInput;
         private System.Windows.Forms.Label orderInfoLabel;
         private System.Windows.Forms.Label customerLabel;
-        private System.Windows.Forms.Label rush_order_label;
+        private System.Windows.Forms.Label rushOrderLabel;
         private System.Windows.Forms.TextBox nameInput;
         private System.Windows.Forms.ComboBox rushOrderInput;
         private System.Windows.Forms.Button submitButton;
