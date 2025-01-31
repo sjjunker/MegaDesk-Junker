@@ -35,7 +35,7 @@
             this.material_label = new System.Windows.Forms.Label();
             this.widthInput = new System.Windows.Forms.TextBox();
             this.depthInput = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.orderInfoLabel = new System.Windows.Forms.Label();
             this.customerLabel = new System.Windows.Forms.Label();
             this.rush_order_label = new System.Windows.Forms.Label();
             this.nameInput = new System.Windows.Forms.TextBox();
@@ -111,16 +111,16 @@
             this.depthInput.TabIndex = 4;
             this.depthInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidateDepth);
             // 
-            // label1
+            // orderInfoLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 26);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Order Information";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.orderInfoLabel.AutoSize = true;
+            this.orderInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderInfoLabel.Location = new System.Drawing.Point(13, 219);
+            this.orderInfoLabel.Name = "orderInfoLabel";
+            this.orderInfoLabel.Size = new System.Drawing.Size(182, 26);
+            this.orderInfoLabel.TabIndex = 9;
+            this.orderInfoLabel.Text = "Order Information";
+            this.orderInfoLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // customerLabel
             // 
@@ -216,7 +216,7 @@
             this.Controls.Add(this.nameInput);
             this.Controls.Add(this.rush_order_label);
             this.Controls.Add(this.customerLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.orderInfoLabel);
             this.Controls.Add(this.depthInput);
             this.Controls.Add(this.widthInput);
             this.Controls.Add(this.material_label);
@@ -241,7 +241,7 @@
         private System.Windows.Forms.Label material_label;
         private System.Windows.Forms.TextBox widthInput;
         private System.Windows.Forms.TextBox depthInput;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label orderInfoLabel;
         private System.Windows.Forms.Label customerLabel;
         private System.Windows.Forms.Label rush_order_label;
         private System.Windows.Forms.TextBox nameInput;
